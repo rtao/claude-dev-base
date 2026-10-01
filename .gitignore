@@ -1,0 +1,55 @@
+# .NET
+bin/
+obj/
+*.dll
+*.exe
+*.pdb
+*.user
+*.suo
+*.cache
+*.nupkg
+*.snupkg
+project.lock.json
+*.nuget.props
+*.nuget.targets
+.nuget/
+
+# IDE
+.vs/
+.vscode/
+.idea/
+*.swp
+*.sln.docstates
+
+# Node
+node_modules/
+dist/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Build results
+[Dd]ebug/
+[Rr]elease/
+x64/
+x86/
+build/
+bld/
+
+# User-specific files
+*.rsuser
+*.userosscache
+*.dbmdl
+
+# Rider
+.idea/
+
+# dotnet tool
+.config/dotnet-tools.json
+
+# Secrets
+appsettings.*.local.json

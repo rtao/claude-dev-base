@@ -1,0 +1,11 @@
+<Solution>
+  <Folder Name="/src/">
+    <Project Path="src/PokerTracker.Api/PokerTracker.Api.csproj" />
+    <Project Path="src/PokerTracker.Domain/PokerTracker.Domain.csproj" />
+    <Project Path="src/PokerTracker.Infrastructure/PokerTracker.Infrastructure.csproj" />
+  </Folder>
+  <Folder Name="/tests/">
+    <Project Path="tests/PokerTracker.Api.Tests/PokerTracker.Api.Tests.csproj" />
+    <Project Path="tests/PokerTracker.Domain.Tests/PokerTracker.Domain.Tests.csproj" />
+  </Folder>
+</Solution>
