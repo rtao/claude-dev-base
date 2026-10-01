@@ -4,9 +4,9 @@ const apiClient = axios.create({
   baseURL: '/',
 });
 
-export function setAuthToken(getAccessTokenSilently: () => Promise<string>) {
+export function setAuthToken(getToken: () => Promise<string>) {
   apiClient.interceptors.request.use(async (config) => {
-    const token = await getAccessTokenSilently();
+    const token = await getToken();
     config.headers.Authorization = `Bearer ${token}`;
     return config;
   });

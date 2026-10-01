@@ -1,11 +1,14 @@
 import { Auth0Provider, useAuth0 } from '@auth0/auth0-react';
-import { ReactNode, useEffect } from 'react';
+import { useEffect, type ReactNode } from 'react';
 import { setAuthToken } from '../api/client';
 
 function AuthTokenSetup({ children }: { children: ReactNode }) {
   const { getAccessTokenSilently } = useAuth0();
   useEffect(() => {
-    setAuthToken(getAccessTokenSilently);
+    setAuthToken(async () => {
+      const token = await getAccessTokenSilently();
+      return token ?? '';
+    });
   }, [getAccessTokenSilently]);
   return <>{children}</>;
 }
